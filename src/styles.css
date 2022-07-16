@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+nav {
+    height: 10vh;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color: transparent;
+}
+
+nav a {
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    width: fit-content;
+    padding: 0 5px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: #0D6EFD;
+    font-weight: bold;
+    transition: all 0.3 ease-in-out;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    border-bottom: 3px solid rgb(13, 110, 253);
+}
+
+.container0 {
+    display: flex;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(13, 110, 253, 0.6646008745294993) 100%, rgba(13, 110, 253, 1) 100%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#hero {
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 12px #0D6EFD;
+    z-index: -1;
+}
+
+#brand {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: rgb(13, 110, 253);
+    font-family: 'Poppins', sans-serif;
+    /* visibility: hidden; */
+}
+
+#tagline {
+    font-size: 30px;
+    letter-spacing: 1px;
+    /* visibility: hidden; */
+    color: rgb(53, 53, 53);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+#location {
+    font-size: 1.5rem;
+}
+
+.container1 {
+    background-color: white;
+    min-height: 60vh;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.typedtext:after {
+    content: "";
+    animation: type 10s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes type {
+    0% {
+        content: "Blockchain Developer";
+    }
+
+    20% {
+        content: "Web 3.0 Developer";
+    }
+
+    50% {
+        content: "Android Developer";
+    }
+
+    80% {
+        content: "an Ethical Hacker";
+    }
+
+    100% {
+        content: "Blockchain Developer";
+    }
+
+}
+
+#social {
+    position: absolute;
+    top: 10vh;
+    right: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#social .item {
+    font-size: 2rem;
+    transition: all 0.4;
+    color: black;
+}
+
+#social .item:hover {
+    color: #FFFF00;
+    text-shadow: 1px 1px 3px gray;
+    cursor: pointer;
+}
+
+.heading {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.hr {
+    border: none;
+    border-bottom: 3px solid yellow;
+    width: 250px;
+    margin: 2px auto;
+}
+
+#container2 {
+    padding: 5% 7%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50vh;
+}
+
+#container2 p {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.resumebtn {
+    color: white;
+    font-size: 1.5rem;
+    padding: 6px 15px;
+    border-radius: 5px;
+    background-color: #0D6EFD;
+    text-decoration: none;
+    transition: all 0.5 ease linear;
+    letter-spacing: 3px;
+}
+
+.resumebtn:hover {
+    color: black;
+    background-color: #FFFF00;
+
+}
+
+#skillsbox {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 50px 0;
+}
+
+#skillsbox p {
+    border: 2px solid transparent;
+    padding: 5px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    transition: all 0.5 ease-in;
+}
+
+#skillsbox p:hover {
+    background: #0D6EFD;
+    background: linear-gradient(to right, #0D6EFD 12%, #FFFF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    border-radius: 10px;
+    box-shadow: 1px 2px 20px -3px rgba(13, 110, 253, 0.85);
+    -webkit-box-shadow: 1px 2px 20px -3px rgba(13, 110, 253, 0.85);
+    -moz-box-shadow: 1px 1px 20px -3px rgba(13, 110, 253, 0.85);
+
+}
+
+
+#projectbox {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5% 5%;
+    height: 60vh;
+}
+
+.project {
+    box-shadow: 2px 2px 13px gray;
+    width:fit-content;
+}
+
+.projectimage {
+    height: 200px;
+}
+
+.informationdiv {
+    margin-left: 20px;
+}
+
+.informationdiv h3 {
+    margin: 15px 0;
+}
+
+.informationdiv p {
+    margin: 15px 0;
+}
+
+.underd {
+    padding: 5% 7%;
+}
+
+footer {
+    min-height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer #fsocial {
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer a{
+    color: white;
+}
+
+.fitem {
+    margin: 3px 7px;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width:1340px){
+    #projectbox {
+        display: grid;
+        grid-template-rows:1fr 1fr;
+        grid-template-columns:1fr 1fr;
+        grid-gap:150px;
+        padding: 5% 7%;
+        /* margin:40px 20px; */
+        height: fit-content;
+    }
+    
+    .project {
+        box-shadow: 2px 2px 13px gray;
+        width:fit-content;
+    }
+    
+    .projectimage {
+        height: 200px;
+    }
+}
+
+
+@media (max-width:960px) {
+
+
+    .container0 {
+        display: flex;
+        min-height: 100vh;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(13, 110, 253, 0.6646008745294993) 100%, rgba(13, 110, 253, 1) 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Courier New', Courier, monospace;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 8%, rgba(13, 110, 253, 1) 96%, rgba(13, 110, 253, 1) 100%);
+
+    }
+
+    #hero {
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 12px #0D6EFD;
+        /* z-index: -1; */
+    }
+
+    #brand {
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+
+    #tagline {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: rgb(53, 53, 53);
+        z-index: 1;
+        margin-top: 10px;
+    }
+
+    #location {
+        font-size: 1.5rem;
+    }
+
+    #social {
+        position: static;
+        min-height: 10vh;
+        width: fit-content ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #social .item {
+        font-size: 2rem;
+        transition: all 0.4;
+        margin:0 9px;
+    }
+    #container2 p{
+        text-align: center;
+    }
+
+    #projectbox {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 5% auto;
+    }
+
+    .project {
+        box-shadow: 2px 2px 13px gray;
+        width:fit-content;
+        margin: 20px auto;
+    }
+    .projectimage {
+        height: 180px;
+    }
+    
+}
+
+@media (max-width:830px) {
+
+    .container1 {
+        background-color: white;
+        height: fit-content;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    #skillsbox {
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 50px 0;
+    }
+
+    #skillsbox p {
+        border: 2px solid transparent;
+        padding: 2px;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.5 ease-in;
+    }
+
+
+}
+
+
+@media (max-width:520px) {
+
+
+    .container0 {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    #hero {
+        height: 300px;
+        width: auto;
+        margin-top: 50px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 12px #0D6EFD;
+        z-index: -1;
+    }
+
+    #brand {
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: rgb(13, 110, 253);
+        font-family: 'Poppins', sans-serif;
+        /* visibility: hidden; */
+    }
+
+    #tagline {
+        font-size: 16px;
+        letter-spacing: 1px;
+        /* visibility: hidden; */
+        color: rgb(53, 53, 53);
+        z-index: 1;
+        margin-top: 10px;
+    }
+
+    #location {
+        font-size:0.9rem;
+    }
+
+
+    nav {
+        height: 10vh;
+        background-color: whitesmoke;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    nav a {
+        border-bottom: 2px solid transparent;
+        width: fit-content;
+        padding: 0 5px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-family: 'Poppins', sans-serif;
+        color: #0D6EFD;
+        font-weight: bold;
+        transition: all 0.3 ease-in-out;
+        margin: 0 5px;
+    }
+
+    nav a:hover {
+        border-bottom: 3px solid rgb(13, 110, 253);
+    }
+
+
+
+}
