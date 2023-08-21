@@ -31,7 +31,7 @@ nav a {
     font-size: 1.3rem;
     letter-spacing: 2px;
     font-family: 'Poppins', sans-serif;
-    color: #0D6EFD;
+    color: #FFFF00;
     font-weight: bold;
     transition: all 0.3 ease-in-out;
     margin: 0 15px;
@@ -101,17 +101,14 @@ nav a:hover {
         content: "Blockchain Developer";
     }
 
-    20% {
+    33% {
         content: "Web 3.0 Developer";
     }
 
-    50% {
+    66% {
         content: "Android Developer";
     }
 
-    80% {
-        content: "an Ethical Hacker";
-    }
 
     100% {
         content: "Blockchain Developer";
@@ -153,7 +150,7 @@ nav a:hover {
 
 .hr {
     border: none;
-    border-bottom: 3px solid yellow;
+    border-bottom: 4px solid yellow;
     width: 250px;
     margin: 2px auto;
 }
